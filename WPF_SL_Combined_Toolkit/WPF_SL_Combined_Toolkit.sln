@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_SL_Combined_Toolkit_SL", "WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit_SL.csproj", "{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}"
-EndProject
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_SL_Combined_Toolkit_WPF", "WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit_WPF.csproj", "{84FBB0E9-5414-4987-AD23-F572C9E569C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL_Example", "SL_Example\SL_Example.csproj", "{EDDF3DDC-C93D-4F05-9CE6-28D6D25E326D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Example", "WPF_Example\WPF_Example.csproj", "{C21E0627-D096-4294-A9BB-02548FA971C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_SL_Combined_Toolkit_SL", "WPF_SL_Combined_Toolkit_SL\WPF_SL_Combined_Toolkit_SL.csproj", "{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{84FBB0E9-5414-4987-AD23-F572C9E569C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84FBB0E9-5414-4987-AD23-F572C9E569C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FBB0E9-5414-4987-AD23-F572C9E569C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,6 +29,10 @@ Global
 		{C21E0627-D096-4294-A9BB-02548FA971C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C21E0627-D096-4294-A9BB-02548FA971C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C21E0627-D096-4294-A9BB-02548FA971C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A4EFE5-35EC-43B1-B49D-1DBCA9BA9C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

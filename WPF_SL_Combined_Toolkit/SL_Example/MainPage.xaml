@@ -4,6 +4,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:tileView="clr-namespace:WPF_SL_Combined_Toolkit.Controls.TileView;assembly=WPF_SL_Combined_Toolkit"
+    xmlns:cbtk="urn:wpfsl-combined-toolkit"
     mc:Ignorable="d"
     d:DesignHeight="300" d:DesignWidth="400">
 
@@ -14,7 +15,9 @@
             <tileView:TileViewItem Header="bb" />
             <tileView:TileViewItem Header="bb" />
             <tileView:TileViewItem Header="cc" />
-            <tileView:TileViewItem Header="dd" />
+            <tileView:TileViewItem Header="dd">
+                <cbtk:EnumComboBox Width="200" EnumType="Visibility" Height="20" IsNullable="True"/>
+                </tileView:TileViewItem>
         </tileView:TileView>
     </Grid>
 </UserControl>

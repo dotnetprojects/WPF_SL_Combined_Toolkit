@@ -4,7 +4,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-//using ConverterSystems.Workstation.Controls.DragDrop;
 #if SILVERLIGHT
 using WPF_SL_Combined_Toolkit.HelperClasses;
 #endif

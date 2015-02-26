@@ -57,35 +57,78 @@
       <HintPath>..\..\..\..\git\mcc4_VISU\usedExternalProjects\silverlight\April 2010 Silverlight Toolkit\Source\Source code\Binaries\System.Windows.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Controls.Toolkit">
-      <HintPath>..\..\..\..\git\mcc4_VISU\usedExternalProjects\silverlight\April 2010 Silverlight Toolkit\Source\Source code\Binaries\System.Windows.Controls.Toolkit.dll</HintPath>
+      <HintPath>..\..\librarys\SL\System.Windows.Controls.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\Animation\AnimationBase.cs" />
-    <Compile Include="Controls\Animation\AnimationExtensions.cs" />
-    <Compile Include="Controls\Animation\AnimationManager.cs" />
-    <Compile Include="Controls\Animation\AnimationSelectorBase.cs" />
-    <Compile Include="Controls\Animation\Easings.cs" />
-    <Compile Include="Controls\TileView\TileView.cs" />
-    <Compile Include="Controls\TileView\TileViewItem.cs" />
-    <Compile Include="ExtensionMethods\DoubleUtil.cs" />
-    <Compile Include="HelperClasses\DataTemplateSelector.cs" />
-    <Compile Include="HelperClasses\HandledEventArgs.cs" />
-    <Compile Include="HelperClasses\HandledEventHandler.cs" />
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\Animation\AnimationBase.cs">
+      <Link>Controls\Animation\AnimationBase.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\Animation\AnimationExtensions.cs">
+      <Link>Controls\Animation\AnimationExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\Animation\AnimationManager.cs">
+      <Link>Controls\Animation\AnimationManager.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\Animation\AnimationSelectorBase.cs">
+      <Link>Controls\Animation\AnimationSelectorBase.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\Animation\Easings.cs">
+      <Link>Controls\Animation\Easings.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\EnumComboBox\EnumComboBox.cs">
+      <Link>Controls\EnumComboBox\EnumComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\NullableComboBox\NullableComboBox.cs">
+      <Link>Controls\NullableComboBox\NullableComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\TileView\TileView.cs">
+      <Link>Controls\TileView\TileView.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\TileView\TileViewItem.cs">
+      <Link>Controls\TileView\TileViewItem.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Converters\Base\ValueConverter.cs">
+      <Link>Converters\Base\ValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Converters\BoolToValueConverter.cs">
+      <Link>Converters\BoolToValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\ExtensionMethods\DoubleUtil.cs">
+      <Link>ExtensionMethods\DoubleUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\HelperClasses\DataTemplateSelector.cs">
+      <Link>HelperClasses\DataTemplateSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\HelperClasses\HandledEventArgs.cs">
+      <Link>HelperClasses\HandledEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\HelperClasses\HandledEventHandler.cs">
+      <Link>HelperClasses\HandledEventHandler.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Controls\TileView\TileView.xaml">
+    <Page Include="..\WPF_SL_Combined_Toolkit\Controls\TileView\TileView.xaml">
+      <Link>Controls\TileView\TileView.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Themes\Generic.xaml">
+    <Page Include="..\WPF_SL_Combined_Toolkit\Themes\Generic.xaml">
+      <Link>Themes\Generic.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\NullableComboBox\NullableComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MarkupExtensions\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

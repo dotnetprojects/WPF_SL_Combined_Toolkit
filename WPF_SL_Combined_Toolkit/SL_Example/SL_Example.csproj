@@ -93,7 +93,7 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit_SL.csproj">
+    <ProjectReference Include="..\WPF_SL_Combined_Toolkit_SL\WPF_SL_Combined_Toolkit_SL.csproj">
       <Project>{e3a4efe5-35ec-43b1-b49d-1dbca9ba9c0d}</Project>
       <Name>WPF_SL_Combined_Toolkit_SL</Name>
     </ProjectReference>

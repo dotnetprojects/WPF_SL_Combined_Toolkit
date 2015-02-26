@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -48,6 +49,11 @@
     <Compile Include="Controls\Animation\AnimationManager.cs" />
     <Compile Include="Controls\Animation\AnimationSelectorBase.cs" />
     <Compile Include="Controls\Animation\Easings.cs" />
+    <Compile Include="Controls\EnumComboBox\EnumComboBox.cs" />
+    <Compile Include="Controls\NullableComboBox\NullableComboBox.cs" />
+    <Compile Include="Converters\Base\ValueConverter.cs" />
+    <Compile Include="Converters\BoolToValueConverter.cs" />
+    <Compile Include="Converters\EnumToValueConverter.cs" />
     <Compile Include="ExtensionMethods\DoubleUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\TileView\TileView.cs" />
@@ -55,6 +61,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="Controls\NullableComboBox\NullableComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\TileView\TileView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

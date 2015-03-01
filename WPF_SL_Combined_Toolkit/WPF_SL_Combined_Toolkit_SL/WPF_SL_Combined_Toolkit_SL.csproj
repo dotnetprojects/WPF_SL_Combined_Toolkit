@@ -59,11 +59,15 @@
     <Reference Include="System.Windows.Controls.Toolkit">
       <HintPath>..\..\librarys\SL\System.Windows.Controls.Toolkit.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Behaviors\TextUpdateBindingBehavior.cs">
+      <Link>Behaviors\TextUpdateBindingBehavior.cs</Link>
+    </Compile>
     <Compile Include="..\WPF_SL_Combined_Toolkit\Controls\Animation\AnimationBase.cs">
       <Link>Controls\Animation\AnimationBase.cs</Link>
     </Compile>

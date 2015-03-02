@@ -101,6 +101,12 @@
     <Compile Include="..\WPF_SL_Combined_Toolkit\Converters\BoolToValueConverter.cs">
       <Link>Converters\BoolToValueConverter.cs</Link>
     </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Converters\EnumToValueConverter.cs">
+      <Link>Converters\EnumToValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF_SL_Combined_Toolkit\Converters\NullToValueConverter.cs">
+      <Link>Converters\NullToValueConverter.cs</Link>
+    </Compile>
     <Compile Include="..\WPF_SL_Combined_Toolkit\ExtensionMethods\DoubleUtil.cs">
       <Link>ExtensionMethods\DoubleUtil.cs</Link>
     </Compile>

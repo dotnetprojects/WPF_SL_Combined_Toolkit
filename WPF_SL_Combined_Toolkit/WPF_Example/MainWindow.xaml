@@ -1,17 +1,22 @@
 ﻿<Window x:Class="WPF_Example.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:tileView="clr-namespace:WPF_SL_Combined_Toolkit.Controls.TileView;assembly=WPF_SL_Combined_Toolkit"
         xmlns:cbtk="urn:wpfsl-combined-toolkit"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:tileView="clr-namespace:WPF_SL_Combined_Toolkit.Controls.TileView;assembly=WPF_SL_Combined_Toolkit"
+        Title="MainWindow"
+        Width="525"
+        Height="350">
     <Grid>
         <tileView:TileView>
             <tileView:TileViewItem Header="aa" />
             <tileView:TileViewItem Header="bb" />
             <tileView:TileViewItem Header="cc" />
             <tileView:TileViewItem Header="dd">
-                <cbtk:EnumComboBox Width="200" Height="20" EnumType="{x:Type Visibility}" IsNullable="True"/>
-                </tileView:TileViewItem>
+                <cbtk:EnumComboBox Width="200"
+                                   Height="20"
+                                   EnumType="{x:Type Visibility}"
+                                   IsNullable="True" />
+            </tileView:TileViewItem>
         </tileView:TileView>
     </Grid>
 </Window>

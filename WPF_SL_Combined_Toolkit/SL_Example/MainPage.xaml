@@ -1,23 +1,27 @@
 ﻿<UserControl x:Class="SL_Example.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:tileView="clr-namespace:WPF_SL_Combined_Toolkit.Controls.TileView;assembly=WPF_SL_Combined_Toolkit"
-    xmlns:cbtk="urn:wpfsl-combined-toolkit"
-    mc:Ignorable="d"
-    d:DesignHeight="300" d:DesignWidth="400">
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:cbtk="urn:wpfsl-combined-toolkit"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:tileView="clr-namespace:WPF_SL_Combined_Toolkit.Controls.TileView;assembly=WPF_SL_Combined_Toolkit"
+             d:DesignHeight="300"
+             d:DesignWidth="400"
+             mc:Ignorable="d">
 
     <Grid x:Name="LayoutRoot" Background="White">
-<tileView:TileView ReorderingDuration="0:0:0.33" ResizingDuration="0:0:0.33" >
-    <tileView:TileViewItem Header="aa" />
+        <tileView:TileView ReorderingDuration="0:0:0.33" ResizingDuration="0:0:0.33">
+            <tileView:TileViewItem Header="aa" />
             <tileView:TileViewItem Header="bb" />
             <tileView:TileViewItem Header="bb" />
             <tileView:TileViewItem Header="bb" />
             <tileView:TileViewItem Header="cc" />
             <tileView:TileViewItem Header="dd">
-                <cbtk:EnumComboBox Width="200" EnumType="Visibility" Height="20" IsNullable="True"/>
-                </tileView:TileViewItem>
+                <cbtk:EnumComboBox Width="200"
+                                   Height="20"
+                                   EnumType="Visibility"
+                                   IsNullable="True" />
+            </tileView:TileViewItem>
         </tileView:TileView>
     </Grid>
 </UserControl>

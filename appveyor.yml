@@ -26,13 +26,14 @@ artifacts:
     name: WPF_SL_Combined_Toolkit.dll
   - path: WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit\bin\Debug\WPF\WPF_SL_Combined_Toolkit.pdb
     name: WPF_SL_Combined_Toolkit.pdb
+  - path: '**\DotNetProjects.WPF_SL_Combined_Toolkit*.nupkg'
   
 #uncomment to publish to NuGet
 deploy:
   provider: NuGet
   api_key:
     secure: OrhpK2cLXXcoWW+hU6xAv3eeKIbATEFbenteoFsi9EfM1yyDof6ZuNKAsA3Vy6vb
-  artifact: **\*.nupkg
+  artifact: /.*\.nupkg/
   
   
   

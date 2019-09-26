@@ -9,6 +9,11 @@
     <FileVersion>2.0.0.0</FileVersion>
     <PackageProjectUrl>https://github.com/dotnetprojects/WPF_SL_Combined_Toolkit/</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageId>DotNetProjects.WPF_SL_Combined_Toolkit</PackageId>
+    <Authors>WPF_SL_Combined_Toolkit</Authors>
+    <Company>DotNetProjects</Company>
+    <Product>DotNetProjects.WPF_SL_Combined_Toolkit</Product>
+    <AssemblyName>WPF_SL_Combined_Toolkit</AssemblyName>
     
   </PropertyGroup>
   

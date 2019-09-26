@@ -1,8 +1,8 @@
-﻿using System.Windows;
+﻿using Microsoft.Xaml.Behaviors;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using System.Windows.Interactivity;
 using System.Windows.Markup;
 
 [assembly: XmlnsDefinition("urn:wpfsl-combined-toolkit", "WPF_SL_Combined_Toolkit.Behaviors")]

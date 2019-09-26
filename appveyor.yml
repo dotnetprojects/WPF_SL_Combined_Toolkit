@@ -12,6 +12,11 @@ assembly_info:
   assembly_informational_version: "{version}"
 
 configuration: Debug
+
+image: Visual Studio 2019
+
+before_build:
+  - nuget restore WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit.sln
   
 build:
   project: WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit.sln

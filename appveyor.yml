@@ -1,15 +1,17 @@
-version: 1.0.{build}
+version: 2.0.{build}
 
 branches:
   only:
     - master
 
-assembly_info:
+dotnet_csproj:
   patch: true
-  file: AssemblyInfo.*
-  assembly_version: "{version}"
-  assembly_file_version: "{version}"
-  assembly_informational_version: "{version}"
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
 
 configuration: Debug
 
@@ -21,16 +23,9 @@ before_build:
 build:
   project: WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit.sln
 
-after_build:
-  - ps: .\nuget\pack.ps1
-
 test: off
 
 artifacts:
-  - path: WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit\bin\Debug\WPF\WPF_SL_Combined_Toolkit.dll
-    name: WPF_SL_Combined_Toolkit.dll
-  - path: WPF_SL_Combined_Toolkit\WPF_SL_Combined_Toolkit\bin\Debug\WPF\WPF_SL_Combined_Toolkit.pdb
-    name: WPF_SL_Combined_Toolkit.pdb
   - path: '**\DotNetProjects.WPF_SL_Combined_Toolkit*.nupkg'
   
 #uncomment to publish to NuGet
